@@ -10,8 +10,10 @@
 
     <dimen name="ctl_elevation">8dp</dimen>
     <dimen name="expandedTitleMarginStart">48dp</dimen>
-    <dimen name="app_bar_height">182dp</dimen>
-    <dimen name="recycler_padding_top">186dp</dimen>
+    <dimen name="app_bar_height">112dp</dimen>
+    <dimen name="recycler_padding_top">116dp</dimen>
     <dimen name="recycler_padding_bottom">28dp</dimen>
+    <dimen name="title_start_margin">48dp</dimen>
+    <dimen name="margin_micro">4dp</dimen>
 
 </resources>
