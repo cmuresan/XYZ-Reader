@@ -25,4 +25,16 @@
 
     <style name="Theme.Bacon.Detail"></style>
 
+    <style name="ExpandedTitleTextAppearance">
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">@dimen/expanded_title_text_size</item>
+    </style>
+
+    <style name="CollapsedTitleTextAppearance">
+        <item name="android:textSize">@dimen/collapsed_title_text_size</item>
+    </style>
+
+    <style name="TextAppearanceBody" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:fontFamily">@font/rosarioregular</item>
+    </style>
 </resources>

@@ -15,5 +15,12 @@
     <dimen name="recycler_padding_bottom">28dp</dimen>
     <dimen name="title_start_margin">48dp</dimen>
     <dimen name="margin_micro">4dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fragment_article_detail_app_bar_height">250dp</dimen>
+    <dimen name="expanded_title_margin_start">24dp</dimen>
+    <dimen name="up_button_width">56dp</dimen>
+    <dimen name="expanded_title_text_size">17sp</dimen>
+    <dimen name="collapsed_title_text_size">16sp</dimen>
 
 </resources>
