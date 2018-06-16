@@ -19,6 +19,7 @@
     <dimen name="fab_size">56dp</dimen>
     <dimen name="fragment_article_detail_app_bar_height">250dp</dimen>
     <dimen name="expanded_title_margin_start">24dp</dimen>
+    <dimen name="collapsed_title_margin">24dp</dimen>
     <dimen name="up_button_width">56dp</dimen>
     <dimen name="expanded_title_text_size">17sp</dimen>
     <dimen name="collapsed_title_text_size">16sp</dimen>

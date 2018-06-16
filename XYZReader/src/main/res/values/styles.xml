@@ -35,6 +35,6 @@
     </style>
 
     <style name="TextAppearanceBody" parent="@style/TextAppearance.AppCompat.Medium">
-        <item name="android:fontFamily">@font/rosarioregular</item>
+        <item name="fontFamily">@font/rosarioregular</item>
     </style>
 </resources>

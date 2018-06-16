@@ -45,6 +45,7 @@ public class ArticleDetailFragment extends Fragment implements
     private long mItemId;
     private View mRootView;
     private ImageView mPhotoView;
+    private TextView bodyView;
 
     private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.sss", Locale.US);
     // Use default locale format
@@ -97,6 +98,7 @@ public class ArticleDetailFragment extends Fragment implements
         collapsingToolbar = mRootView.findViewById(R.id.main_collapsing);
 
         mPhotoView = mRootView.findViewById(R.id.photo);
+        bodyView = mRootView.findViewById(R.id.article_body);
 
         mRootView.findViewById(R.id.share_fab).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,12 +130,10 @@ public class ArticleDetailFragment extends Fragment implements
             return;
         }
 
-        TextView bodyView = mRootView.findViewById(R.id.article_body);
-
         if (mCursor != null) {
-//            mRootView.setAlpha(0);
-//            mRootView.setVisibility(View.VISIBLE);
-//            mRootView.animate().alpha(1);
+            mRootView.setAlpha(0);
+            mRootView.setVisibility(View.VISIBLE);
+            mRootView.animate().alpha(1);
             String title = mCursor.getString(ArticleLoader.Query.TITLE);
             Date publishedDate = parsePublishedDate();
             if (!publishedDate.before(START_OF_EPOCH.getTime())) {
@@ -158,6 +158,9 @@ public class ArticleDetailFragment extends Fragment implements
             }
             collapsingToolbar.setTitle(title);
             bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />")));
+            bodyView.invalidate();
+            bodyView.setAlpha(1f);
+            bodyView.setVisibility(View.VISIBLE);
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
                         @Override
