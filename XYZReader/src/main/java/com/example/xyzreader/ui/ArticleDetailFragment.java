@@ -158,9 +158,6 @@ public class ArticleDetailFragment extends Fragment implements
             }
             collapsingToolbar.setTitle(title);
             bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY).replaceAll("(\r\n|\n)", "<br />")));
-            bodyView.invalidate();
-            bodyView.setAlpha(1f);
-            bodyView.setVisibility(View.VISIBLE);
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
                         @Override

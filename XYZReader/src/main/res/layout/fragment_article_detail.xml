@@ -77,7 +77,7 @@
         android:elevation="@dimen/fab_elevation"
         android:src="@drawable/ic_share"
         android:stateListAnimator="@anim/fab_state_list_anim"
-        app:layout_anchor="@id/main_collapsing"
+        app:layout_anchor="@id/main_appbar"
         app:layout_anchorGravity="bottom|right|end"
         tools:targetApi="lollipop" />
 </android.support.design.widget.CoordinatorLayout>
